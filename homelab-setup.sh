@@ -10,7 +10,7 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
-apt-get -y install curl sudo openssh-server
+apt-get -y install curl sudo openssh-server debian-goodies
 
 rm -Rf /home/astra/.ssh
 mkdir /home/astra/.ssh
